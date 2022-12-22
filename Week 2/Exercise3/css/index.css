@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    background: linear-gradient(#cc2b5e , #753a88);
+    background-repeat: no-repeat;
+}
+h1{
+    font-family: Solway;
+    font-size: 18px;
+    font-weight: 600;
+    color:gray;
+    font-style: italic;
+
+}
+
+.paragraph1{
+    border-style: 1px solid;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+
+}
+
+#paragraph{
+    border-style: 1px solid;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+}
