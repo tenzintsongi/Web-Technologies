@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.content-wrapper {
+    width: 50%;
+    background-color: antiquewhite;
+    padding: 5%;
+    color: #8b7e7e;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1x;
+    margin-bottom: 30px;
+    font-family: "Unvounded", cursive;
+}
+
+h2{
+    margin-bottom: 100px;
+    font-weight: 200;
+}
+
+figure {
+    width: 50%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 50px;
+    background: rgb(43, 11, 11);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+.button a:hover {
+    background: black;
+    color: rgb(171, 138, 75);
+}
+
+@media screen and (max-width: 1024px) {
+    .button a {
+        font-size: 16px;
+    }
+    .content-wrapper h2 {
+        margin-bottom: 100px;
+    }
+    .content-wrapper h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .content-wrapper {
+        padding-bottom: 50px;
+    }
+    .content-wrapper h1{
+        font-size: 30px;
+    }
+}
+
+.content-wrapper,
+figure {
+    width: 100%;
+}
+
+figure {
+    height: 300px;
+}
+
+@media screen and (max-width: 420px) {
+    .container{
+        flex-direction: column;
+    }
+    .content-wrapper{
+        height: auto;
+        width: 100%;
+    }
+    .button a {
+        text-align: center;
+    }
+}
