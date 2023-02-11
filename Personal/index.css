@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-image: url(./img/Tsokn.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    width:100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo{
+    color: chocolate;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span{
+    color: whitesmoke;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    color: snow;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin: 0 15px;
+    padding-right: 40px;
+    transition: all .45s ease;
+}
+
+nav ul li a:hover{
+    color:rgb(145, 73, 22);
+    transition: .4s;
+}
+
+.content{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.content h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span{
+    color:chocolate;
+}
+
+.content p{
+    color:black;
+    line-height:25px;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0px;
+    background-color: rgb(200, 185, 123)
+}
+
+.about img{
+    height: 600px;
+    width: 400px;
+}
+
+.about-text{
+    width: 500px;
+    padding: 20px;
+}
+
+.about-text h2{
+    font-size: 60px;
+    color:brown;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.main{
+    width: 1100px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills{
+    height: 100vh;
+    width: 100%;
+    padding: 40px 0px;
+    background-color: rgb(248, 248, 210);
+}
+
+.skills img{
+    height: 100vh;
+    width: 700px;
+}
+.skills-text{
+    width: 500px;
+    padding-left: 80px;
+}
+
+.skills-text h2{
+    font-size: 70px;
+    color:rgb(187, 80, 14);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.skills ul{
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.skills-text ul li{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.card{
+    width: 1100px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hobbies-text{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/hobbies.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hobbies-text h2{
+    color: white;
+    line-height: 10px;
+    font-size: 70px;
+    padding-top: 150px;
+    padding-left: 120px;
+}
+
+.hobbies ul{
+    padding-top: 70px;
+    padding-left: 150px;
+}
+.hobbies-text ul li{
+    color: white;
+    line-height:40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-section{
+    height: 200vh;
+    background: url(./img/contact.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    color: black;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+    flex: 1;
+}
+
+.contact-form h2{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+    background: black;
+    color: white;
+    border: none;
+    width: calc(50% - 10px);
+    height: 40px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form .send-btn:hover{
+    background:#0582E3;
+}
+
+.reference-section{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(195, 195, 195);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reference-section h2{
+    font-size: 50px;
+    color: black;
+    padding-top: 40px;
+    padding-left: 500px;
+    margin-bottom: 10px;
+}
+
+.reference-section h3{
+    font-size: 22px;
+    padding-left: 350px;
+    margin-bottom: 10px;
+
+}
+.reference-section li{
+    font-size: 20px;
+    padding-left: 510px;
+}
+
+@media screen and (max-width: 768px){
+    .about img{
+        height:450px;
+    }
+    .skills img{
+        width: 400px;
+    }
+    .skills-text{
+        padding-left: 20px;
+    }
+    .skills-text h2{
+        font-size: 40px;
+    }
+    .skills-text ul li{
+        font-size: 20px;
+    }
+    .hobbies-text h2{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    .hobbies ul {
+        padding-left: 130px ;
+        padding-top: 30px;
+    }
+    .hobbies-text ul li{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .contact-info{
+        line-height: 30px;
+        padding-top: 50px;
+    }
+    .contact-form h2{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .contact-form .text-box{
+        height:30px;
+        width: calc(30% - 10px);
+    }
+    .reference-section h2{
+        padding-left: 300px;
+        font-size: 40px;
+    }
+    .reference-section h3{
+        font-size: 20px;
+        padding-left: 150px;
+    }
+    .reference-section li{
+        padding-left: 300px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 944px){
+    .skills-text ul li{
+        font-size: 15px;
+    }
+    .skills-text{
+        padding-left: 10px;
+    }
+    .skills-text h2{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 783px){
+    .skills-text ul li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 779px){
+    .skills-text ul li{
+        font-size: 5px;
+    }
+    .skills img{
+        width: 400px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .about img{
+        height: 300px;
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 508px) {
+    .skills-text ul li{
+    font-size: 15px;
+    }
+    .container{
+    height: 120vh;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .container p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .skills-text ul li{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .skills-text ul li{
+        font-size: 5px;
+    }
+    .skills-text h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container{
+        width: 480px;
+    }
+    .about{
+        width: 480px;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 15px;
+    }
+    .card{
+        flex-direction: column;
+        height: 450px;
+    }
+    .skills{
+        width: 480px;
+    }
+    .skills img{
+        padding-top: 10px;
+    }
+    .skills h2{
+        padding-left: 75px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .skills-text ul{
+        padding-left: 90px;
+    }
+    .hobbies-text{
+        width: 480px;
+    }
+    .contact-section{
+        width: 480px;
+    }
+    .reference-section{
+        width: 480px;
+    }
+}
+@media screen and (max-width: 488px) {
+    .skills{
+        width: 490px;
+    }
+    .hobbies-text{
+        width: 490px;
+    }
+    .contact-section{
+        width: 490px;
+    }
+    .reference-section{
+        width: 490px;
+    }
+    .container{
+        width: 490px;
+    }
+    .about{
+        width: 490px;
+    }
+
+}
+@media screen and (max-width: 508px) {
+    .skills-text ul li{
+        font-size: 10px;
+        padding-left: 0;
+        line-height: 10px;
+    }
+    .skills-text{
+        padding-left: 0;
+    }
+    .reference-section h2{
+        padding-left: 200px;
+        font-size: 40px;
+    }
+    .reference-section h3{
+        font-size: 20px;
+        padding-left: 100px;
+    }
+    .reference-section li{
+        padding-left: 200px;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+        font-size: 10px;
+    }
+
+    .contact-form h2{
+        font-size: 30px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
